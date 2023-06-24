@@ -28,6 +28,18 @@ const MAP_POPULATE: libc::c_int = libc::MAP_POPULATE;
 #[cfg(not(any(target_os = "linux", target_os = "android")))]
 const MAP_POPULATE: libc::c_int = 0;
 
+#[cfg(any(
+    target_os = "android",
+    all(target_os = "linux", not(target_env = "musl"))
+))]
+use libc::{mmap64 as mmap, off64_t as off_t};
+
+#[cfg(not(any(
+    target_os = "android",
+    all(target_os = "linux", not(target_env = "musl"))
+)))]
+use libc::{mmap, off_t};
+
 pub struct MmapInner {
     ptr: *mut libc::c_void,
     len: usize,
@@ -50,13 +62,13 @@ impl MmapInner {
         let (map_len, map_offset) = Self::adjust_mmap_params(len as usize, alignment as usize)?;
 
         unsafe {
-            let ptr = libc::mmap(
+            let ptr = mmap(
                 ptr::null_mut(),
                 map_len as libc::size_t,
                 prot,
                 flags,
                 file,
-                aligned_offset as libc::off_t,
+                aligned_offset as off_t,
             );
 
             if ptr == libc::MAP_FAILED {
