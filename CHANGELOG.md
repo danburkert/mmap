@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.7.1] - 2023-06-24
+### Fixed
+- Mapping beyond 4GB offset on 32 bit glibc. Linux-only.
+  [@lvella](https://github.com/lvella)
+
 ## [0.7.0] - 2023-06-08
 ### Added
 - `Mmap::remap`, `MmapMut::remap` and `MmapRaw::remap`. Linux-only.
@@ -160,7 +165,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - `winapi` dependency. [memmap-rs/pull/89](https://github.com/danburkert/memmap-rs/pull/89)
 
-[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.7.1...HEAD
+[0.7.1]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.7.0...v0.7.1
 [0.7.0]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.6.2...v0.7.0
 [0.6.2]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.6.1...v0.6.2
 [0.6.1]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.6.0...v0.6.1
