@@ -36,6 +36,8 @@
 //! you can use [`MmapOptions`] in order to further configure a mapping
 //! before you create it.
 
+#![allow(clippy::len_without_is_empty, clippy::missing_safety_doc)]
+
 #[cfg_attr(unix, path = "unix.rs")]
 #[cfg_attr(windows, path = "windows.rs")]
 #[cfg_attr(not(any(unix, windows)), path = "stub.rs")]
@@ -1549,7 +1551,7 @@ mod test {
             .open(&path)
             .unwrap();
 
-        let offset = u32::max_value() as u64 + 2;
+        let offset = u32::MAX as u64 + 2;
         let len = 5432;
         file.set_len(offset + len as u64).unwrap();
 
