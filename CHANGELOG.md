@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.8.0] - 2023-09-25
+### Changed
+- The `Advice` type is a struct and not an enum now.
+  [@adamreichold](https://github.com/adamreichold)
+
+### Fixed
+- Some of the `Advise` variants were unsound and now require `unsafe` to be constructed.
+  [@adamreichold](https://github.com/adamreichold)
+
 ## [0.7.1] - 2023-06-24
 ### Fixed
 - Mapping beyond 4GB offset on 32 bit glibc. Linux-only.
@@ -165,7 +174,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - `winapi` dependency. [memmap-rs/pull/89](https://github.com/danburkert/memmap-rs/pull/89)
 
-[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.7.1...HEAD
+[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.7.1...v0.8.0
 [0.7.1]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.7.0...v0.7.1
 [0.7.0]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.6.2...v0.7.0
 [0.6.2]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.6.1...v0.6.2
