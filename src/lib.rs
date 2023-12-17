@@ -1977,7 +1977,8 @@ mod test {
 
         let a = mmap.as_ref()[0];
         unsafe {
-            mmap.unchecked_advise(crate::UncheckedAdvice::DontNeed).unwrap();
+            mmap.unchecked_advise(crate::UncheckedAdvice::DontNeed)
+                .unwrap();
         }
         let b = mmap.as_ref()[0];
 
