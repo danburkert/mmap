@@ -1977,7 +1977,7 @@ mod test {
 
         let a = mmap.as_ref()[0];
         unsafe {
-            mmap.unchecked_advise(UncheckedAdvice::DontNeed).unwrap();
+            mmap.unchecked_advise(crate::UncheckedAdvice::DontNeed).unwrap();
         }
         let b = mmap.as_ref()[0];
 
@@ -1997,7 +1997,7 @@ mod test {
         let a = mmap.as_ref()[0];
         let b = mmap.as_ref()[page_size];
         unsafe {
-            mmap.unchecked_advise_range(UncheckedAdvice::DontNeed, page_size, page_size)
+            mmap.unchecked_advise_range(crate::UncheckedAdvice::DontNeed, page_size, page_size)
                 .unwrap();
         }
         let c = mmap.as_ref()[0];
