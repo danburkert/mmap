@@ -26,22 +26,22 @@ const MAP_POPULATE: libc::c_int = libc::MAP_POPULATE;
 #[cfg(not(any(target_os = "linux", target_os = "android")))]
 const MAP_POPULATE: libc::c_int = 0;
 
-#[cfg(any(target_os = "linux", target_os = "freebsd", target_os = "android"))]
+#[cfg(any(target_os = "linux", target_os = "android"))]
 const MAP_HUGETLB: libc::c_int = libc::MAP_HUGETLB;
 
-#[cfg(any(target_os = "linux", target_os = "freebsd", target_os = "android"))]
+#[cfg(any(target_os = "linux", target_os = "android"))]
 const MAP_HUGE_MASK: libc::c_int = libc::MAP_HUGE_MASK;
 
-#[cfg(any(target_os = "linux", target_os = "freebsd", target_os = "android"))]
+#[cfg(any(target_os = "linux", target_os = "android"))]
 const MAP_HUGE_SHIFT: libc::c_int = libc::MAP_HUGE_SHIFT;
 
-#[cfg(not(any(target_os = "linux", target_os = "freebsd", target_os = "android")))]
+#[cfg(not(any(target_os = "linux", target_os = "android")))]
 const MAP_HUGETLB: libc::c_int = 0;
 
-#[cfg(not(any(target_os = "linux", target_os = "freebsd", target_os = "android")))]
+#[cfg(not(any(target_os = "linux", target_os = "android")))]
 const MAP_HUGE_MASK: libc::c_int = 0;
 
-#[cfg(not(any(target_os = "linux", target_os = "freebsd", target_os = "android")))]
+#[cfg(not(any(target_os = "linux", target_os = "android")))]
 const MAP_HUGE_SHIFT: libc::c_int = 0;
 
 #[cfg(any(

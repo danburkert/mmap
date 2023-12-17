@@ -1412,7 +1412,7 @@ mod test {
     extern crate tempfile;
 
     #[cfg(unix)]
-    use crate::advice::{Advice, UncheckedAdvice};
+    use crate::advice::Advice;
     use std::fs::{File, OpenOptions};
     use std::io::{Read, Write};
     use std::mem;
