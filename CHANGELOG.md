@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+- Build on Android.
+
 ## [0.9.2] - 2023-12-17
 ### Fixed
 - Build on FreeBSD.
