@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.9.3] - 2023-12-19
 ### Fixed
 - Build on Android.
 
@@ -195,7 +196,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - `winapi` dependency. [memmap-rs/pull/89](https://github.com/danburkert/memmap-rs/pull/89)
 
-[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.2...HEAD
+[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.3...HEAD
+[0.9.3]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.2...v0.9.3
 [0.9.2]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.1...v0.9.2
 [0.9.1]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.0...v0.9.1
 [0.9.0]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.8.0...v0.9.0
