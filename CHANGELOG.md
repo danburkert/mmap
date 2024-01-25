@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.9.4] - 2024-01-25
 ### Changed
 - The `libc` crate >= 0.2.151 is required now.
 
@@ -201,7 +203,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - `winapi` dependency. [memmap-rs/pull/89](https://github.com/danburkert/memmap-rs/pull/89)
 
-[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.3...HEAD
+[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.4...HEAD
+[0.9.4]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.3...v0.9.4
 [0.9.3]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.2...v0.9.3
 [0.9.2]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.1...v0.9.2
 [0.9.1]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.0...v0.9.1
