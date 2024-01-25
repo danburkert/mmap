@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- The `libc` crate >= 0.2.151 is required now.
+
+### Fixed
+- Build on Android with an older `libc` crate.
 
 ## [0.9.3] - 2023-12-19
 ### Fixed
