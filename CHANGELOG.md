@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.9.5] - 2024-09-13
+### Added
+- `Advise::is_supported` and `UncheckedAdvice::is_supported`. Linux only.
+  [@xzfc](https://github.com/xzfc)
+- Documentation improvements.
+  [@RalfJung](https://github.com/RalfJung)
+  [@betelgeuse](https://github.com/betelgeuse)
+  [@ADSteele916](https://github.com/ADSteele916)
+
 ## [0.9.4] - 2024-01-25
 ### Changed
 - The `libc` crate >= 0.2.151 is required now.
@@ -203,7 +212,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - `winapi` dependency. [memmap-rs/pull/89](https://github.com/danburkert/memmap-rs/pull/89)
 
-[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.4...HEAD
+[Unreleased]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.5...HEAD
+[0.9.5]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.4...v0.9.5
 [0.9.4]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.3...v0.9.4
 [0.9.3]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.2...v0.9.3
 [0.9.2]: https://github.com/RazrFalcon/memmap2-rs/compare/v0.9.1...v0.9.2

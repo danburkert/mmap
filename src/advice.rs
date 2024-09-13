@@ -407,11 +407,11 @@ impl UncheckedAdvice {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
-
     #[cfg(target_os = "linux")]
     #[test]
     fn test_is_supported() {
+        use super::*;
+
         assert!(Advice::Normal.is_supported());
         assert!(Advice::Random.is_supported());
         assert!(Advice::Sequential.is_supported());
