@@ -359,7 +359,7 @@ impl MmapInner {
 
     #[inline]
     pub fn mut_ptr(&mut self) -> *mut u8 {
-        self.ptr as *mut u8
+        self.ptr.cast()
     }
 
     #[inline]

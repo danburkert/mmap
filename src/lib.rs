@@ -109,7 +109,7 @@ impl MmapAsRawDesc for RawFd {
 }
 
 #[cfg(unix)]
-impl<'a, T> MmapAsRawDesc for &'a T
+impl<T> MmapAsRawDesc for &T
 where
     T: AsRawFd,
 {
@@ -126,7 +126,7 @@ impl MmapAsRawDesc for RawHandle {
 }
 
 #[cfg(windows)]
-impl<'a, T> MmapAsRawDesc for &'a T
+impl<T> MmapAsRawDesc for &T
 where
     T: AsRawHandle,
 {
