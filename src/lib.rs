@@ -13,8 +13,6 @@
     clippy::return_self_not_must_use,
     clippy::unreadable_literal,
     clippy::upper_case_acronyms,
-    // remove later
-    clippy::legacy_numeric_constants
 )]
 
 //! A cross-platform Rust API for memory mapped buffers.
@@ -72,7 +70,6 @@ use std::fmt;
 #[cfg(not(any(unix, windows)))]
 use std::fs::File;
 use std::io::{Error, ErrorKind, Result};
-use std::isize;
 use std::mem;
 use std::ops::{Deref, DerefMut};
 #[cfg(unix)]
